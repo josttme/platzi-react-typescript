@@ -22,7 +22,6 @@ export function ResponsiveMasonryGallery ({
           <RandomCat
             key={id}
             src={url}
-            className="rounded-md"
             onClick={() => { viewLargeImage(url) }}
           />
         ))}
