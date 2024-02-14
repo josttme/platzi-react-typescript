@@ -19,7 +19,7 @@ export default function Home (): JSX.Element {
     setViewImage({ url: '' })
   }
   return (
-    <main className='px-1 pb-52 lg:px-4'>
+    <main className='px-1 flex flex-col min-h-screen pb-52 lg:px-4'>
       <div className='w-full grid gap-5 py-10 place-content-center'>
       <h1 className="font-semibold text-4xl text-center">Cats Random</h1>
         <button
