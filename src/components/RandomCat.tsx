@@ -13,7 +13,6 @@ export function RandomCat ({
   height,
   ...imgProps
 }: Props): JSX.Element {
-  /*  const [loaded, setLoaded] = useState(false) */
   const [currentSrc, setCurrentSrc] = useState(
     'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4='
   )
@@ -33,16 +32,14 @@ export function RandomCat ({
     }
   }, [src])
   return (
-      <picture className='overflow-hidden'>
-        <img
-          src={currentSrc}
-          ref={node}
-          alt="Imagen of Cat IA"
-          className="rounded-md lg:cursor-pointer lg:hover:scale-[1.05] duration-150"
-
-          {...imgProps}
-          /* onLoad={() => { setLoaded(true) }} */
-        />
-      </picture>
+    <picture className="overflow-hidden">
+      <img
+        src={currentSrc}
+        ref={node}
+        alt="Imagen of Cat IA"
+        className="rounded-md lg:cursor-pointer lg:hover:scale-[1.05] duration-150"
+        {...imgProps}
+      />
+    </picture>
   )
 }
